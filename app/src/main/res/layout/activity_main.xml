@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.varshayadv.firstproject.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:id="@+id/coffee_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/logo_image_view"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee"/>
+
+    <TextView
+        android:id="@+id/coffeetime_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/coffee_image_view"
+        android:text="coffee time for you"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/pin_image_view"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/coffeetime_text_view"
+        android:src="@drawable/pin" />
+
+    <TextView
+        android:id="@+id/add_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coffeetime_text_view"
+        android:layout_toRightOf="@id/pin_image_view"
+        android:layout_marginBottom="10dp"
+        android:text="1 Baffin Way Off Perston Road\nE14 9PE LONDON\nUNITED KINGDOM"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/contact_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_text_view"
+        android:text="(+44)207/5171101\n www.cft.co.uk"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/open_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_text_view"
+        android:layout_marginLeft="25dp"
+        android:text="We Are 7 Days Open\n 9:00 to 20:00"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+
+
+
+</RelativeLayout>
+
